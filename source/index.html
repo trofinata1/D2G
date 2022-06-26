@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет-магазин кофейных напитков "Drink2Go"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a href="#" class="logo">
+      <svg class="logo-icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <a href="#" class="logo--middle">
+      D
+      <svg class="page-header__logo-icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      G
+    </a>
+    <a href="#" class="logo--full">
+      Drink
+      <svg class="page-header__logo-icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      Go
+    </a>
+    <p class="header__note">Интернет-магазин кофейных напитков</p>
+    <div class="user-menu">
+      <a class="user-menu__link" href="#">
+        <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#log-in"></use>
+        </svg>
+        <span class="visually-hidden">Войти</span>
+      </a>
+      <a class="user-menu__link" href="#" aria-label="Открыть корзину.">
+        <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+        <span class="visually-hidden">Корзина</span>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню.">
+        <svg class="main-nav__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </button>
+      <div class="main-nav__list">
+        <a class="main-nav__item" href="#">Главная</a>
+        <a class="main-nav__item" href="#">Каталог</a>
+        <a class="main-nav__item" href="#">Доставка</a>
+        <a class="main-nav__item" href="#">О нас</a>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков "Drink2Go".</h1>
+    <section class="promo swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide promo-product">
+          <img class="promo-product__image" src="#" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="280" height="280">
+          <p class="badge">Новинка!</p>
+          <h2 class="title">Декаф Флэт Уайт</h2>
+          <p class="description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+          </p>
+          <p class="price price--old">295₽</p>
+          <p class="price">225₽</p>
+          <a href="order.html" class="button">Заказать</a>
+        </div>
+        <div class="swiper-slide promo-product">
+          <img class="promo-product__image" src="#" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
+          <p class="badge">Новинка!</p>
+          <h2 class="title">Лавандовый Латте</h2>
+          <p class="description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <p class="price price--old">285₽</p>
+          <p class="price">265₽</p>
+          <a href="order.html" class="button">Заказать</a>
+        </div>
+        <div class="swiper-slide promo-product">
+          <img class="promo-product__image" src="#" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="280" height="280">
+          <p class="badge">Новинка!</p>
+          <h2 class="title">Тройной Эспрессо</h2>
+          <p class="description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <p class="price price--old">395₽</p>
+          <p class="price">375₽</p>
+          <a href="order.html" class="button">Заказать</a>
+        </div>
+        <div class="swiper-button-prev promo-arrow" aria-label="Перейти на предыдущий слайд.">
+          <svg class="promo-arrow__icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next promo-arrow" aria-label="Перейти на следующий слайд.">
+          <svg class="promo-arrow__icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="features">
+      <p class="badge">Преимущества</p>
+      <h2 class="title">Главные причины выбрать Drink2Go</h2>
+      <ul class="features-list">
+        <li class="features-item">
+          <svg class="features-item__icon" width="50" height="56" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#speed"></use>
+          </svg>
+          <h3 class="title">Скорость</h3>
+          <p class="description">Готовый напиток всегда под рукой — просто открой банку</p>
+        </li>
+        <li class="features-item">
+          <svg class="features-item__icon" width="52" height="56" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#comfort"></use>
+          </svg>
+          <h3 class="title">Удобство</h3>
+          <p class="description">Легко помещается и в карман,
+            и в маленькую сумочку</p>
+        </li>
+        <li class="features-item">
+          <svg class="features-item__icon" width="42" height="56" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#energy"></use>
+          </svg>
+          <h3 class="title">Бодрость</h3>
+          <p class="description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+        </li>
+        <li class="features-item">
+          <svg class="features-item__icon" width="46" height="56" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#ecology"></use>
+          </svg>
+          <h3 class="title">Экологичность</h3>
+          <p class="description">Вся упаковка сделана
+            из перерабатываемых материалов</p>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <p class="badge">Каталог</p>
+      <h2 class="title">Каталог кофейных напитков</h2>
+      <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filter__group">
+          <legend class="title">Цена</legend>
+          <div class="range">
+            <div class="range__scale">
+              <div class="range__bar" style="width: 110px;">
+                <button class="range__toggle toggle-min" type="button" aria-label="Изменить минимальную цену."></button>
+                <button class="range__toggle toggle-max" type="button" aria-label="Изменить максимальную цену."></button>
+              </div>
+            </div>
+            <div class="range__labels">
+              <label class="range__label">
+                от <input class="range__input" type="number" name="min-price" value="0">
+              </label>
+              <label class="range__label">
+                до <input class="range__input" type="number" name="max-price" value="900">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend claass="title">Наличие молока</legend>
+          <input class="filter__input" type="radio" name="milk" id="all" value="all" checked>
+          <label class="filter__label" for="all">Неважно</label>
+          <input class="filter__input" type="radio" name="milk" id="animal" value="animal">
+          <label class="filter__label" for="animal">Только животное</label>
+          <input class="filter__input" type="radio" name="milk" id="vegetable" value="vegetable">
+          <label class="filter__label" for="vegetable">Только растительное</label>
+          <input class="filter__input" type="radio" name="milk" id="empty" value="empty" disabled>
+          <label class="filter__label" for="empty">Без молока</label>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend claass="title">Страна произрастания</legend>
+          <input class="filter__input" type="checkbox" name="Brazil" id="Brazil" checked>
+          <label class="label" for="Brazil">Бразилия</label>
+          <input class="filter__input" type="checkbox" name="Ethiopia" id="Ethiopia">
+          <label class="label" for="Ethiopia">Эфиопия</label>
+          <input class="filter__input" type="checkbox" name="Colombia" id="Colombia">
+          <label class="label" for="Colombia">Колумбия</label>
+          <input class="filter__input" type="checkbox" name="Costa Rica" id="Costa Rica">
+          <label class="label" for="Costa Rica">Коста-Рика</label>
+          <input class="filter__input" type="checkbox" name="Peru" id="Peru">
+          <label class="label" for="Peru">Перу</label>
+        </fieldset>
+        <button class="button" type="reset">Сбросить фильтр</button>
+      </form>
+      <form class="sort" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="label" for="sorting">Сортировка</label>
+        <select class="select-control" name="sorting" id="sorting">
+          <option value="popular">по умолчанию</option>
+          <option value="cheap">по возрастанию цены</option>
+          <option value="expensive">по убыванию цены</option>
+          <svg class="select-control__icon" width="10" height="6" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#dropdown"></use>
+          </svg>
+        </select>
+        <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
+      </form>
+      <section class="products">
+        <h2 class="visually-hidden">Продукты.</h2>
+        <div class="card">
+          <img class="card__image" src="#" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками.">
+          <h3 class="title">Декаф Флэт Уайт</h3>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <a class="card__link">
+            <img class="card__image" src="#" alt="Баночка фиолетового цвета с чуть более темными фиолетовыми косыми полосками.">
+            <h3 class="title">Декаф Флэт Уайт</h3>
+          </a>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <a class="card__link">
+            <img class="card__image" src="#" alt="Баночка серого цвета с чуть более темными серыми косыми полосками.">
+            <h3 class="title">Декаф Флэт Уайт</h3>
+          </a>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <a class="card__link">
+            <img class="card__image" src="#" alt="Баночка розового цвета с чуть более темными розовыми косыми полосками.">
+            <h3 class="title">Декаф Флэт Уайт</h3>
+          </a>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <a class="card__link">
+            <img class="card__image" src="#" alt="Баночка коричневого цвета с чуть более темными коричневыми косыми полосками.">
+            <h3 class="title">Декаф Флэт Уайт</h3>
+          </a>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="card">
+          <a class="card__link">
+            <img class="card__image" src="#" alt="Баночка темно-бежевого цвета с чуть более темными бежевыми косыми полосками.">
+            <h3 class="title">Декаф Флэт Уайт</h3>
+          </a>
+          <p class="description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+          <p class="price">225₽</p>
+          <button class="button" type="button">В корзину
+            <svg class="button__icon" width="16" height="10" aria-hidden="true" focusable="false" role="img">
+              <use xlink:href="img/sprite.svg#cart-add"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div class="pagination">
+        <a class="link pagination-link pagination-arrow pagination-prev" href="#">Назад</a>
+        <a class="link pagination-link pagination-number" href="#">1</a>
+        <a class="link pagination-link pagination-number" href="#">2</a>
+        <a class="link pagination-link pagination-number" href="#">3</a>
+        <a class="link pagination-link pagination-arrow pagination-next" href="#">Вперед</a>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841602!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2sge!4v1641386002904!5m2!1sru!2sge"
+      width="320"
+      height="420"
+      style="border: 0;"
+      allowfullscreen=""
+      loading="lazy"
+      title="Расположение на карте интернет-магазина кофейных напитков Drink2Go.">
+    </iframe>
+    <a href="#" class="logo--middle">
+      D
+      <svg class="page-header__logo-icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      G
+    </a>
+    <a href="#" class="logo--full">
+      Drink
+      <svg class="page-header__logo-icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      Go
+    </a>
+    <div class="social-list">
+      <a class="social-item" href="#">
+        <svg class="social-item__icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a class="social-item" href="#">
+        <svg class="social-item__icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Переход на страницу в Пинтерест интернет-магазина «Drink2Go».">
+          <use xlink:href="img/sprite.svg#pinterest"></use>
+        </svg>
+      </a>
+      <a class="social-item" href="#">
+        <svg class="social-item__icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Переход на страницу в Одноклассниках интернет-магазина «Drink2Go».">
+          <use xlink:href="img/sprite.svg#ok"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-links">
+      <h2 class="title">Интернет-магазин</h2>
+      <a class="footer-links__item" href="#">Каталог</a>
+      <a class="footer-links__item" href="#">Доставка</a>
+      <a class="footer-links__item" href="#">Способы оплаты</a>
+      <a class="footer-links__item" href="#">О нас</a>
+    </div>
+    <div class="footer-links">
+      <h2 class="title">Медиа</h2>
+      <a class="footer-links__item" href="#">Блог</a>
+      <a class="footer-links__item" href="#">Информация для СМИ</a>
+      <a class="footer-links__item" href="#">Правовая информация</a>
+    </div>
+    <div class="contacts">
+      <h2 class="title">Контакты</h2>
+      <p class="contacts__item">
+        <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#pin"></use>
+        </svg>
+        Санкт-Петербург, набережная реки Карповки, дом 5
+      </p>
+      <p class="contacts__item" href="tel:+79999999999">
+        <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
+          <use xlink:href="img/sprite.svg#tel"></use>
+        </svg>
+        +7 (999) 999-99-99
+      </p>
+    </div>
+    <p class="copyright">Разработано в HTML Academy</p>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
