@@ -60,7 +60,7 @@
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков "Drink2Go".</h1>
     <section class="promo swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide promo-product">
+        <div class="swiper-slide promo-product promo-product--decaf-flat-white">
           <img class="promo-product__image" src="#" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="280" height="280">
           <p class="badge">Новинка!</p>
           <h2 class="title">Декаф Флэт Уайт</h2>
@@ -71,7 +71,7 @@
           <p class="price">225₽</p>
           <a href="order.html" class="button">Заказать</a>
         </div>
-        <div class="swiper-slide promo-product">
+        <div class="swiper-slide promo-product promo-product--lavender-latte">
           <img class="promo-product__image" src="#" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
           <p class="badge">Новинка!</p>
           <h2 class="title">Лавандовый Латте</h2>
@@ -82,7 +82,7 @@
           <p class="price">265₽</p>
           <a href="order.html" class="button">Заказать</a>
         </div>
-        <div class="swiper-slide promo-product">
+        <div class="swiper-slide promo-product promo-product--espresso">
           <img class="promo-product__image" src="#" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="280" height="280">
           <p class="badge">Новинка!</p>
           <h2 class="title">Тройной Эспрессо</h2>
@@ -93,13 +93,13 @@
           <p class="price">375₽</p>
           <a href="order.html" class="button">Заказать</a>
         </div>
-        <div class="swiper-button-prev promo-arrow" aria-label="Перейти на предыдущий слайд.">
-          <svg class="promo-arrow__icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+        <div class="swiper-button-prev promo-arrow">
+          <svg class="promo-arrow__icon" width="11" height="20" aria-label="Перейти на предыдущий слайд." role="img">
             <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </div>
-        <div class="swiper-button-next promo-arrow" aria-label="Перейти на следующий слайд.">
-          <svg class="promo-arrow__icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+        <div class="swiper-button-next promo-arrow">
+          <svg class="promo-arrow__icon" width="11" height="20" aria-label="Перейти на предыдущий слайд." role="img">
             <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </div>
@@ -166,7 +166,7 @@
           </div>
         </fieldset>
         <fieldset class="filter__group">
-          <legend claass="title">Наличие молока</legend>
+          <legend class="title">Наличие молока</legend>
           <input class="filter__input" type="radio" name="milk" id="all" value="all" checked>
           <label class="filter__label" for="all">Неважно</label>
           <input class="filter__input" type="radio" name="milk" id="animal" value="animal">
@@ -177,15 +177,15 @@
           <label class="filter__label" for="empty">Без молока</label>
         </fieldset>
         <fieldset class="filter__group">
-          <legend claass="title">Страна произрастания</legend>
+          <legend class="title">Страна произрастания</legend>
           <input class="filter__input" type="checkbox" name="Brazil" id="Brazil" checked>
           <label class="label" for="Brazil">Бразилия</label>
           <input class="filter__input" type="checkbox" name="Ethiopia" id="Ethiopia">
           <label class="label" for="Ethiopia">Эфиопия</label>
           <input class="filter__input" type="checkbox" name="Colombia" id="Colombia">
           <label class="label" for="Colombia">Колумбия</label>
-          <input class="filter__input" type="checkbox" name="Costa Rica" id="Costa Rica">
-          <label class="label" for="Costa Rica">Коста-Рика</label>
+          <input class="filter__input" type="checkbox" name="CostaRica" id="CostaRica">
+          <label class="label" for="CostaRica">Коста-Рика</label>
           <input class="filter__input" type="checkbox" name="Peru" id="Peru">
           <label class="label" for="Peru">Перу</label>
         </fieldset>
@@ -197,9 +197,6 @@
           <option value="popular">по умолчанию</option>
           <option value="cheap">по возрастанию цены</option>
           <option value="expensive">по убыванию цены</option>
-          <svg class="select-control__icon" width="10" height="6" aria-hidden="true" focusable="false" role="img">
-            <use xlink:href="img/sprite.svg#dropdown"></use>
-          </svg>
         </select>
         <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
       </form>
@@ -289,7 +286,6 @@
         <a class="link pagination-link pagination-number" href="#">3</a>
         <a class="link pagination-link pagination-arrow pagination-next" href="#">Вперед</a>
       </div>
-    </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -354,12 +350,12 @@
         </svg>
         Санкт-Петербург, набережная реки Карповки, дом 5
       </p>
-      <p class="contacts__item" href="tel:+79999999999">
+      <a class="contacts__item" href="tel:+79999999999">
         <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#tel"></use>
         </svg>
         +7 (999) 999-99-99
-      </p>
+      </a>
     </div>
     <p class="copyright">Разработано в HTML Academy</p>
   </footer>
