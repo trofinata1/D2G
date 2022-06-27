@@ -1,0 +1,34 @@
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: @base-black;
+
+  &--short {
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  &--middle {
+    display: none;
+
+    @media (min-width: @tablet) {
+      display: block;
+    }
+
+    @media (min-width: @desktop) {
+      display: none;
+    }
+  }
+
+  &--full {
+    display: none;
+
+    @media (min-width: @desktop) {
+      display: block;
+    }
+  }
+}
