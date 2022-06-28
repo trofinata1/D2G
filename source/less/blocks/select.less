@@ -1,7 +1,13 @@
 .select {
+  max-width: 125px;
+  margin-left: auto;
   font-family: @main-font;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: @base-primary;
+
+  @media (min-width: @tablet) {
+    margin-left: 0;
+  }
 }

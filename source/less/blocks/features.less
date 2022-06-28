@@ -2,6 +2,18 @@
   .margin-mobile;
   margin-top: 50px;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet) {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    .margin-auto;
+    max-width: @content;
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
 }
 
 .features__title {

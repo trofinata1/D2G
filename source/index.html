@@ -17,7 +17,7 @@
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
-    <a href="#" class="link logo logo--middle">
+    <a href="#" class="link logo logo--middle page-header__logo">
       D
       <svg class="logo__icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
         <use xlink:href="img/sprite.svg#logo"></use>
@@ -49,7 +49,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню.">
         <svg class="main-nav__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
-          <use xlink:href="img/sprite.svg#cart"></use>
+          <use xlink:href="img/sprite.svg#menu-button"></use>
         </svg>
       </button>
       <div class="menu">
@@ -71,19 +71,19 @@
           <p class="promo-product__description">
             Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
           </p>
-          <p class="price price--old">295₽</p>
-          <p class="price">225₽</p>
+          <p class="price price--old promo-product__price promo-product__price--old">295₽</p>
+          <p class="price promo-product__price">225₽</p>
           <a href="order.html" class="button promo-product__button">Заказать</a>
         </div>
         <div class="swiper-slide promo-product promo-product--lavender-latte">
           <img class="promo-product__image" src="#" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
-          <p class="badge">Новинка!</p>
+          <p class="badge promo-product__badge">Новинка!</p>
           <h2 class="title title--big promo-product__title">Лавандовый Латте</h2>
           <p class="promo-product__description">
             Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
           </p>
-          <p class="price price--old">285₽</p>
-          <p class="price">265₽</p>
+          <p class="price price--old promo-product__price promo-product__price--old">285₽</p>
+          <p class="price promo-product__price">265₽</p>
           <a href="order.html" class="button promo-product__button">Заказать</a>
         </div>
         <div class="swiper-slide promo-product promo-product--espresso">
@@ -93,8 +93,8 @@
           <p class="promo-product__description">
             Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
           </p>
-          <p class="price price--old">395₽</p>
-          <p class="price">375₽</p>
+          <p class="price price--old promo-product__price promo-product__price--old">395₽</p>
+          <p class="price promo-product__price">375₽</p>
           <a href="order.html" class="button promo-product__button">Заказать</a>
         </div>
         <div class="swiper-button-prev promo-arrow">
@@ -147,9 +147,9 @@
       </ul>
     </section>
     <section class="catalog">
-      <p class="badge">Каталог</p>
+      <p class="badge catalog__badge">Каталог</p>
       <h2 class="title catalog__title">Каталог кофейных напитков</h2>
-      <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filter catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="visually-hidden">Фильтр.</h3>
         <fieldset class="filter__group">
           <legend class="title title--small">Цена</legend>
@@ -161,16 +161,14 @@
               </div>
             </div>
             <div class="range__labels">
-              <label class="range__label">
-                от <input class="range__input" type="number" name="min-price" value="0">
-              </label>
-              <label class="range__label">
-                до <input class="range__input" type="number" name="max-price" value="900">
-              </label>
+              <label class="visually-hidden">от</label>
+              <input class="range__input" type="number" name="min-price" value="0">
+              <label class="visually-hidden">до</label>
+              <input class="range__input" type="number" name="max-price" value="900">
             </div>
           </div>
         </fieldset>
-        <fieldset class="filter__group">
+        <fieldset class="filter__group filter__group--column">
           <legend class="title title--small">Наличие молока</legend>
           <input class="filter__input" type="radio" name="milk" id="all" value="all" checked>
           <label class="label" for="all">Неважно</label>
@@ -181,7 +179,7 @@
           <input class="filter__input" type="radio" name="milk" id="empty" value="empty" disabled>
           <label class="label label--disabled" for="empty">Без молока</label>
         </fieldset>
-        <fieldset class="filter__group">
+        <fieldset class="filter__group filter__group--column">
           <legend class="title title--small">Страна произрастания</legend>
           <input class="filter__input" type="checkbox" name="Brazil" id="Brazil" checked>
           <label class="label" for="Brazil">Бразилия</label>
@@ -196,8 +194,8 @@
         </fieldset>
         <button class="button button--reverse" type="reset">Сбросить фильтр</button>
       </form>
-      <form class="sort" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="label label--semibold" for="sorting">Сортировка</label>
+      <form class="sort catalog__sort" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="label label--semibold sort__label" for="sorting">Сортировка</label>
         <select class="select" name="sorting" id="sorting">
           <option class="select-option" value="popular">по умолчанию</option>
           <option class="select-option" value="cheap">по возрастанию цены</option>
@@ -205,9 +203,9 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
       </form>
-      <section class="products">
+      <section class="products catalog__products">
         <h3 class="visually-hidden">Продукты.</h3>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -220,7 +218,7 @@
             </svg>
           </button>
         </div>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка фиолетового цвета с чуть более темными фиолетовыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -233,7 +231,7 @@
             </svg>
           </button>
         </div>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка серого цвета с чуть более темными серыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -246,7 +244,7 @@
             </svg>
           </button>
         </div>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка розового цвета с чуть более темными розовыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -259,7 +257,7 @@
             </svg>
           </button>
         </div>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка коричневого цвета с чуть более темными коричневыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -272,7 +270,7 @@
             </svg>
           </button>
         </div>
-        <div class="card">
+        <div class="card products__item">
           <a class="card__link">
             <img class="card__image" src="#" alt="Баночка темно-бежевого цвета с чуть более темными бежевыми косыми полосками.">
             <h4 class="title title--medium">Декаф Флэт Уайт</h4>
@@ -286,7 +284,7 @@
           </button>
         </div>
       </section>
-      <div class="pagination">
+      <div class="pagination catalog__pagination">
         <a class="link pagination-link" href="#"><span class="pagination-link__description">Назад</span></a>
         <a class="link pagination-link" href="#">1</a>
         <a class="link pagination-link pagination-link--current" href="#">2</a>
@@ -294,17 +292,20 @@
         <a class="link pagination-link" href="#"><span class="pagination-link__description">Вперед</span></a>
       </div>
     </section>
+    <section class="location">
+      <h2 class="visually-hidden">Карта местоположения интернет-магазина кофейных напитков Drink2Go.</h2>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841602!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2sge!4v1641386002904!5m2!1sru!2sge"
+        width="100%"
+        height="420"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="Расположение на карте интернет-магазина кофейных напитков Drink2Go.">
+      </iframe>
+    </section>
   </main>
   <footer class="page-footer">
-    <iframe class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841602!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2sge!4v1641386002904!5m2!1sru!2sge"
-      width="320"
-      height="420"
-      style="border: 0;"
-      allowfullscreen=""
-      loading="lazy"
-      title="Расположение на карте интернет-магазина кофейных напитков Drink2Go.">
-    </iframe>
     <a href="#" class="link logo logo--middle page-footer__logo page-footer__logo--middle">
       D
       <svg class="logo__icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
@@ -319,8 +320,8 @@
       </svg>
       Go
     </a>
-    <p class="shop-sign">Интернет-магазин кофейных напитков</p>
-    <div class="social-list">
+    <p class="shop-sign page-footer__shop-sign">Интернет-магазин кофейных напитков</p>
+    <div class="social-list page-footer__social">
       <a class="social-item" href="#">
         <svg class="social-item__icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Переход на страницу во Вконтакте интернет-магазина «Drink2Go».">
           <use xlink:href="img/sprite.svg#vk"></use>
@@ -337,20 +338,20 @@
         </svg>
       </a>
     </div>
-    <div class="footer-links">
+    <div class="footer-links page-footer__links">
       <h2 class="title title--color">Интернет-магазин</h2>
       <a class="link footer-link" href="#">Каталог</a>
       <a class="link footer-link" href="#">Доставка</a>
       <a class="link footer-link" href="#">Способы оплаты</a>
       <a class="link footer-link" href="#">О нас</a>
     </div>
-    <div class="footer-links">
+    <div class="footer-links page-footer__links page-footer__links--media">
       <h2 class="title title--color">Медиа</h2>
       <a class="link footer-link" href="#">Блог</a>
       <a class="link footer-link" href="#">Информация для СМИ</a>
       <a class="link footer-link" href="#">Правовая информация</a>
     </div>
-    <div class="contacts">
+    <div class="contacts page-footer__contacts">
       <h2 class="title title--color">Контакты</h2>
       <p class="contacts__item">
         <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false" role="img">
@@ -365,7 +366,7 @@
         +7 (999) 999-99-99
       </a>
     </div>
-    <p class="copyright">Разработано в <a class="link" href="https://htmlacademy.ru/">HTML Academy</a></p>
+    <p class="copyright page-footer__copyright">Разработано в <a class="link" href="https://htmlacademy.ru/">HTML Academy</a></p>
   </footer>
 <script src="js/script.js"></script>
 </body>

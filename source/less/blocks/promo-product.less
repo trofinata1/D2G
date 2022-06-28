@@ -1,4 +1,14 @@
 .promo-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 1fr 80px 25px 600px 30px auto 6px auto 20px auto 80px 1fr;
+    grid-template-rows: 30px 1fr auto 4px auto 16px auto 40px auto 1fr 1fr;
+  }
+
   &--decaf-flat-white {
     background-color: @flat-white;
   }
@@ -14,6 +24,10 @@
 
 .promo-product__badge {
   @media (min-width: @desktop) {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
     text-align: left;
   }
 }
@@ -22,6 +36,10 @@
   text-align: center;
 
   @media (min-width: @desktop) {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 5;
+    grid-row-end: 6;
     text-align: left;
   }
 }
@@ -35,6 +53,10 @@
   }
 
   @media (min-width: @desktop) {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 8;
     text-align: left;
   }
 }
@@ -42,5 +64,45 @@
 .promo-product__button {
   @media (min-width: @tablet) {
     font-size: 16px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+}
+
+.promo-product__image {
+  @media (min-width: @tablet) {
+    order: 2;
+    // Временно
+    width: 100%;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 12;
+  }
+}
+
+.promo-product__price {
+  @media (min-width: @desktop) {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+
+  &--old {
+    @media (min-width: @desktop) {
+      grid-column-start: 6;
+      grid-column-end: 7;
+      grid-row-start: 9;
+      grid-row-end: 10;
+    }
   }
 }

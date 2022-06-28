@@ -1,4 +1,31 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 20px auto 30px auto 30px auto 20px;
+    grid-template-rows: auto 32px auto 30px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 1fr auto 30px auto 30px auto 30px auto 1fr;
+    grid-template-rows: auto 10px auto 50px auto 20px auto;
+  }
+}
+
 .page-footer__logo {
+  @media (min-width: @tablet) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
   &--middle {
     display: block;
 
@@ -11,5 +38,96 @@
     @media (min-width: @tablet) {
       display: block;
     }
+  }
+}
+
+.page-footer__shop-sign {
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.page-footer__social {
+  min-width: 160px;
+
+  @media (min-width: @tablet) {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+
+.page-footer__links {
+  @media (min-width: @tablet) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+
+  &--media {
+    @media (min-width: @tablet) {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    @media (min-width: @desktop) {
+      grid-column-start: 6;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 6;
+    }
+  }
+}
+
+.page-footer__contacts {
+  @media (min-width: @tablet) {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 }

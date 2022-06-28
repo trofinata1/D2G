@@ -1,5 +1,21 @@
 .page-header {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-left: 20px;
+
+  @media (min-width: @tablet) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    .margin-auto;
+    max-width: @content;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: @tablet) {
+    order: 1;
+  }
 }
