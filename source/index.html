@@ -5,6 +5,7 @@
   <title>Интернет-магазин кофейных напитков "Drink2Go"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/splide.min.css">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -12,7 +13,7 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a href="#" class="link logo logo--short">
+    <a href="#" class="link logo logo--short page-header__logo">
       <svg class="logo__icon" width="32" height="36" aria-label="Логотип интернет-магазина «Drink2Go» - белая цифра 2 в фиолетовом овале." role="img">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
@@ -37,22 +38,19 @@
         <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#log-in"></use>
         </svg>
-        <span class="user-menu__label">Войти</span>
+        <p class="user-menu__label">Войти</p>
       </a>
       <a class="link user-menu__link" href="#">
         <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
           <use xlink:href="img/sprite.svg#cart"></use>
         </svg>
-        <span class="user-menu__label">Корзина</span>
+        <p class="user-menu__label">Корзина</p>
       </a>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню.">
-        <svg class="main-nav__icon" width="16" height="16" aria-hidden="true" focusable="false" role="img">
-          <use xlink:href="img/sprite.svg#menu-button"></use>
-        </svg>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button" aria-label="Нажать, чтобы открыть или закрыть меню.">
       </button>
-      <div class="menu">
+      <div class="menu main-nav__list">
         <a class="link menu__item menu__item--current" href="#">Главная</a>
         <a class="link menu__item" href="#">Каталог</a>
         <a class="link menu__item" href="#">Доставка</a>
@@ -62,53 +60,71 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков "Drink2Go".</h1>
-    <section class="promo swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide promo-product promo-product--decaf-flat-white">
-          <img class="promo-product__image" src="#" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="280" height="280">
-          <p class="badge promo-product__badge">Новинка!</p>
-          <h2 class="title title--big promo-product__title">Декаф Флэт Уайт</h2>
-          <p class="promo-product__description">
-            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
-          </p>
-          <p class="price price--old promo-product__price promo-product__price--old">295₽</p>
-          <p class="price promo-product__price">225₽</p>
-          <a href="order.html" class="button promo-product__button">Заказать</a>
-        </div>
-        <div class="swiper-slide promo-product promo-product--lavender-latte">
-          <img class="promo-product__image" src="#" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
-          <p class="badge promo-product__badge">Новинка!</p>
-          <h2 class="title title--big promo-product__title">Лавандовый Латте</h2>
-          <p class="promo-product__description">
-            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-          </p>
-          <p class="price price--old promo-product__price promo-product__price--old">285₽</p>
-          <p class="price promo-product__price">265₽</p>
-          <a href="order.html" class="button promo-product__button">Заказать</a>
-        </div>
-        <div class="swiper-slide promo-product promo-product--espresso">
-          <img class="promo-product__image" src="#" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="280" height="280">
-          <p class="badge">Новинка!</p>
-          <h2 class="title title--big promo-product__title">Тройной Эспрессо</h2>
-          <p class="promo-product__description">
-            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-          </p>
-          <p class="price price--old promo-product__price promo-product__price--old">395₽</p>
-          <p class="price promo-product__price">375₽</p>
-          <a href="order.html" class="button promo-product__button">Заказать</a>
-        </div>
-        <div class="swiper-button-prev promo-arrow">
-          <svg class="promo-arrow__icon" width="11" height="20" aria-label="Перейти на предыдущий слайд." role="img">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </div>
-        <div class="swiper-button-next promo-arrow">
-          <svg class="promo-arrow__icon" width="11" height="20" aria-label="Перейти на предыдущий слайд." role="img">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
+    <section class="promo splide">
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide promo-product promo-product--decaf-flat-white">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet1@1x.webp 1x, img/content/slider/slider-image-tablet1@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet1@1x.png, img/content/slider/slider-image-tablet1@2x.png 2x">
+              <source type="image/webp" srcset="img/content/slider/slider-image1@1x.webp 1x, img/content/slider/slider-image1@2x.webp 2x">
+              <img class="promo-product__image" src="img/content/slider/slider-image1@1x.png" srcset="img/content/slider/slider-image1@2x.png 2x" alt="Баночка бежевого цвета с чуть более темными бежевыми косыми полосками." width="280" height="280">
+            </picture>
+            <p class="badge promo-product__badge">Новинка!</p>
+            <h2 class="title title--big promo-product__title">Декаф Флэт Уайт</h2>
+            <p class="promo-product__description">
+              Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+            </p>
+            <p class="price price--old promo-product__price promo-product__price--old">295₽</p>
+            <p class="price promo-product__price">225₽</p>
+            <a href="#" class="button promo-product__button ">Заказать</a>
+          </div>
+          <div class="splide__slide promo-product promo-product--lavender-latte">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet2@1x.webp 1x, img/content/slider/slider-image-tablet2@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet2@1x.png, img/content/slider/slider-image-tablet2@2x.png 2x">
+              <source type="image/webp" srcset="img/content/slider/slider-image2@1x.webp 1x, img/content/slider/slider-image2@2x.webp 2x">
+              <img class="promo-product__image" src="img/content/slider/slider-image2@1x.png" srcset="img/content/slider/slider-image2@2x.png 2x" alt="Баночка лавандового цвета с чуть более темными лавандовыми косыми полосками." width="280" height="280">
+            </picture>
+            <p class="badge promo-product__badge">Новинка!</p>
+            <h2 class="title title--big promo-product__title">Лавандовый Латте</h2>
+            <p class="promo-product__description">
+              Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+            </p>
+            <p class="price price--old promo-product__price promo-product__price--old">285₽</p>
+            <p class="price promo-product__price">265₽</p>
+            <a href="#" class="button promo-product__button button--disabled">Заказать</a>
+          </div>
+          <div class="splide__slide promo-product promo-product--espresso">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet3@1x.webp 1x, img/content/slider/slider-image-tablet3@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/content/slider/slider-image-tablet3@1x.png, img/content/slider/slider-image-tablet3@2x.png 2x">
+              <source type="image/webp" srcset="img/content/slider/slider-image3@1x.webp 1x, img/content/slider/slider-image3@2x.webp 2x">
+              <img class="promo-product__image" src="img/content/slider/slider-image3@1x.png" srcset="img/content/slider/slider-image3@2x.png 2x" alt="Баночка серого цвета с чуть более темными серыми косыми полосками." width="280" height="280">
+            </picture>
+            <p class="badge">Новинка!</p>
+            <h2 class="title title--big promo-product__title">Тройной Эспрессо</h2>
+            <p class="promo-product__description">
+              Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+            </p>
+            <p class="price price--old promo-product__price promo-product__price--old">395₽</p>
+            <p class="price promo-product__price">375₽</p>
+            <a href="#" class="button promo-product__button">Заказать</a>
+          </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="splide__arrows promo__arrows">
+        <button class="splide__arrow splide__arrow--prev promo__arrow promo__arrow--prev" aria-label="Назад">
+          <svg class="promo__arrow-icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <button class="splide__arrow splide__arrow--next promo__arrow promo__arrow--next" aria-label="Вперед">
+          <svg class="promo__arrow-icon" width="11" height="20" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
     </section>
     <section class="features">
       <p class="badge">Преимущества</p>
@@ -368,6 +384,7 @@
     </div>
     <p class="copyright page-footer__copyright">Разработано в <a class="link" href="https://htmlacademy.ru/">HTML Academy</a></p>
   </footer>
-<script src="js/script.js"></script>
+  <script src="js/main.js" type="module"></script>
+  <script src="js/libs/splide.min.js"></script>
 </body>
 </html>

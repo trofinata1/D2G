@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: @main-font;
   font-weight: 400;
   font-size: 14px;
@@ -8,6 +11,26 @@
   color: @base-white;
   background-color: @base-primary;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @primary-lighter;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+  }
+
+  &--disabled,
+  &[disabled] {
+    background-color: @base-grey;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @base-grey;
+    }
+  }
 
   &--reverse {
     font-size: 16px;

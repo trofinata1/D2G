@@ -1,7 +1,20 @@
 .promo-product {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  z-index: -2;
+
+  @media (min-width: @tablet) {
+    padding-top: 60px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 
   @media (min-width: @desktop) {
     display: grid;
@@ -23,6 +36,15 @@
 }
 
 .promo-product__badge {
+  margin-top: 10px;
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet) {
+    order: 1;
+    width: 100%;
+    margin-top: 0;
+  }
+
   @media (min-width: @desktop) {
     grid-column-start: 6;
     grid-column-end: 12;
@@ -33,7 +55,14 @@
 }
 
 .promo-product__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    order: 2;
+    margin-bottom: 16px;
+  }
 
   @media (min-width: @desktop) {
     grid-column-start: 6;
@@ -45,9 +74,12 @@
 }
 
 .promo-product__description {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
 
   @media (min-width: @tablet) {
+    order: 3;
     font-size: 20px;
     line-height: 32px;
   }
@@ -62,7 +94,12 @@
 }
 
 .promo-product__button {
+  min-width: 113px;
+  min-height: 40px;
+  margin-left: 20px;
+
   @media (min-width: @tablet) {
+    order: 6;
     font-size: 16px;
   }
 
@@ -75,10 +112,12 @@
 }
 
 .promo-product__image {
+  display: block;
+  object-fit: cover;
+
   @media (min-width: @tablet) {
-    order: 2;
-    // Временно
-    width: 100%;
+    width: 476px;
+    height: 476px;
   }
 
   @media (min-width: @desktop) {
@@ -90,6 +129,10 @@
 }
 
 .promo-product__price {
+  @media (min-width: @tablet) {
+    order: 5;
+  }
+
   @media (min-width: @desktop) {
     grid-column-start: 8;
     grid-column-end: 9;
@@ -98,11 +141,21 @@
   }
 
   &--old {
+    @media (min-width: @tablet) {
+      order: 4;
+    }
+
     @media (min-width: @desktop) {
       grid-column-start: 6;
       grid-column-end: 7;
       grid-row-start: 9;
       grid-row-end: 10;
     }
+  }
+}
+
+.promo-product picture {
+  @media (min-width: @tablet) {
+    order: 7;
   }
 }

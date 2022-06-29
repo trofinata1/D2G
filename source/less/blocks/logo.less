@@ -1,6 +1,6 @@
 .logo {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 800;
   font-size: 24px;
   line-height: 24px;
@@ -16,9 +16,10 @@
 
   &--middle {
     display: none;
+    width: 83px;
 
     @media (min-width: @tablet) {
-      display: block;
+      display: flex;
     }
 
     @media (min-width: @desktop) {
@@ -28,9 +29,10 @@
 
   &--full {
     display: none;
+    width: 170px;
 
     @media (min-width: @desktop) {
-      display: block;
+      display: flex;
     }
   }
 }
