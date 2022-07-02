@@ -8,14 +8,15 @@
   }
 
   @media (min-width: @desktop) {
-    .margin-auto;
     max-width: @content;
+    margin-right: calc((100vw - 1360px) / 2);
+    margin-left: calc((100vw - 1360px) / 2);
   }
 }
 
 .page-header__logo {
   margin-left: 20px;
-  
+
   @media (min-width: @tablet) {
     order: 1;
   }

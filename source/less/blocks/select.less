@@ -1,13 +1,42 @@
 .select {
-  max-width: 125px;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 165px;
   margin-left: auto;
+  padding-top: 4px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  padding-left: 13px;
   font-family: @main-font;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: @base-primary;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
 
   @media (min-width: @tablet) {
-    margin-left: 0;
+    margin-left: 5px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: @base-secondary;
+    outline: transparent;
+  }
+
+  &:active {
+    & + .sort__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.select__option {
+  font-weight: 400;
+  line-height: 24px;
+  background-color: @base-white;
+  color: @base-black;
 }

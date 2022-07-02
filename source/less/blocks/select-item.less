@@ -1,0 +1,20 @@
+.select-item {
+  padding-top: 8px;
+  padding-right: 21px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @base-secondary;
+  }
+
+  &--checked {
+    color: @base-white;
+    background-color: @base-primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @base-secondary;
+  }
+}

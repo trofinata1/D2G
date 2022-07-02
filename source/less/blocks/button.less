@@ -10,20 +10,24 @@
   text-align: center;
   color: @base-white;
   background-color: @base-primary;
+  border-radius: 4px;
   cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: @primary-lighter;
+    outline: transparent;
   }
 
   &:active {
     background-color: @primary-darker;
+    outline: transparent;
   }
 
   &--disabled,
-  &[disabled] {
+  &:disabled {
     background-color: @base-grey;
+    cursor: auto;
 
     &:hover,
     &:focus,
@@ -33,12 +37,25 @@
   }
 
   &--reverse {
+    min-height: 40px;
     font-size: 16px;
     color: @base-primary;
     background-color: @base-white;
-  }
+    border: none;
 
-  &--card {
-    line-height: 20px;
+    &:hover,
+    &:focus {
+      color: @base-white;
+    }
+
+    &--disabled,
+    &:disabled,
+    &--disabled:hover,
+    &--disabled:focus,
+    &:disabled:hover,
+    &:disabled:focus {
+      background-color: @light-grey;
+      color: @base-white;
+    }
   }
 }
